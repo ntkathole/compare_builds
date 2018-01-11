@@ -8,4 +8,10 @@ This is the script to compare packages in two different release engineering buil
 
 ### Running script
 
-<b><i> python compare_versions.py <http://build1-url> <http://build2-url> signature </i></b>
+<i> export SATELLITE_SNAP_URL = http://url/ </i>
+
+<i> export RCM_COMPOSE_URL = http://url/ </i>
+
+<i> export SIGNATURE = signature </i>
+
+<i> python compare_versions.py </i>
