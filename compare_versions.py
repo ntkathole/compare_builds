@@ -47,7 +47,7 @@ def main(url1, url2):
         for pkg in range(len(list2)):
             get_packages(url2, list2[pkg])
         for pkg in range(len(list2)):
-            if 'OK' in os.popen('rpm -K packages/' + list1[pkg]).read():
+            if 'NOT OK' not in os.popen('rpm -K packages/' + list1[pkg]).read():
                 flag1 = flag1 + 1
                 if signature in os.popen(
                     'rpm -qpi packages/' + list2[pkg] + '| grep "Signature" '
