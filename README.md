@@ -3,15 +3,15 @@ This is the script to compare packages in two different release engineering buil
 
 ### This script will perform 
 
-1. <b>RPMs Signature Check</b>: Assure all packages are signed and check signed with particulat signature.
+1. <b>RPMs Signature Check</b>: Assure all packages are signed and check signed with particular signature.
 2. <b>Compare package versions</b>: Compare package versions between builds. This is probably close to being as simple as a diff on the filenames.
 
 ### Running script
 
-<i> export SATELLITE_SNAP_URL = http://url/ </i>
+export SATELLITE_SNAP_URL = 'http://url/'
 
-<i> export RCM_COMPOSE_URL = http://url/ </i>
+export RCM_COMPOSE_URL = 'http://url/' 
 
-<i> export SIGNATURE = signature </i>
+export SIGNATURE = signature
 
-<i> python compare_versions.py </i>
+python compare_versions.py
